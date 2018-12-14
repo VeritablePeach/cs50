@@ -107,23 +107,23 @@ int main(void)
             {
                 printf("VISA\n");
             }
-            if (digits == 16 && dig0b == 4)
+            else if (digits == 16 && dig0b == 4)
             {
                 printf("VISA\n");
             }
 
             //AMEX
-            if (digits == 15 && dig1 == 3 && dig2b == 4)
+            else if (digits == 15 && dig1 == 3 && dig2b == 4)
             {
                 printf("AMEX\n");
             }
-            if (digits == 15 && dig1 == 3 && dig2b == 7)
+            else if (digits == 15 && dig1 == 3 && dig2b == 7)
             {
                 printf("AMEX\n");
             }
 
             //MASTERCARD
-            if (digits == 16 && dig0b == 5 && dig1 > 0 && dig1 < 6)
+            else if (digits == 16 && dig0b == 5 && dig1 > 0 && dig1 < 6)
             {
                 printf("MASTERCARD\n");
             }
